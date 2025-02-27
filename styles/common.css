@@ -1,8 +1,8 @@
 :root {
     --bg-color: #000;
     --main-text-color: #FFF;
-    --main-brand-color: #e50914;
-    --main-brand-color-light: #e44c54;
+    --main-brand-color: #c88937;
+    --main-brand-color-light: #deb887;
     --border-color: #4b5563;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +18,15 @@ a {
     color:var(--main-text-color);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 p {
     margin: 0;
     margin-bottom: 1rem;
+}
+
+a.hide {
+    display: none;
 }

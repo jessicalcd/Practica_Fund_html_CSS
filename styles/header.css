@@ -2,7 +2,12 @@
     position: sticky;
     top: 0;
     background-color: var(--bg-color);
-    z-index: 99;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    /*overflow: hidden;*/
     img {
         width: 20%;
         max-width: 150px;
@@ -12,5 +17,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        display: flex;
+        gap: 5px;
     }
 }

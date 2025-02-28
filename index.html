@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/banner.css">
         <link rel="stylesheet" href="./styles/header.css">
         <link rel="stylesheet" href="./styles/components.css">
+        <link rel="stylesheet" href="./styles/info.css">
     </head>
     <body class="main-bg">
         <header class="header">
@@ -31,11 +32,11 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main">
             <h1 id="title">Wonder Woman</h1>
             <hr>
             <p>
-                Soy <strong>Wonder Woman</strong>, la princesa <em>Diana de Temiscira</em>, guerrera amazona, y embajadora de la paz y la justicia en el mundo. Vengo de una isla oculta, protegida por las diosas griegas, donde fui criada como una guerrera. 
+                <strong>Wonder Woman</strong><br>Soy <strong>Wonder Woman</strong>, la princesa <em>Diana de Temiscira</em>, guerrera amazona, y embajadora de la paz y la justicia en el mundo. Vengo de una isla oculta, protegida por las diosas griegas, donde fui criada como una guerrera. 
                 <br>Con mi lazo de la verdad, puedo hacer que cualquiera revele sus secretos más profundos, y mi escudo es tan resistente como cualquier arma de guerra. Además, mis brazaletes indestructibles desvían ataques y proyectiles con gran facilidad.
                 <br>Mi misión es luchar por la paz, proteger la justicia y asegurarme de que el mundo sea un lugar mejor para todos, sin importar su origen o condición.
             </p>
@@ -45,7 +46,52 @@
                     <p class="heading">Wonder Woman</p>
                 </div>
             </section>
-        </main>
+            <form action="/registro" method="post" novalidate>
+                <div class="form-element">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-element">
+                    <label for="last-name">Apellidos</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="form-element">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Escribe tu teléfono" title="Sólo se aceptan números" pattern="^[0-9]+$">
+                </div>
+                <div class="form-element">
+                    <label for="github">Github username</label>
+                    <input required type="text" name="github" id="github" placeholder="Escribe tu usuario de Github" title="Formato correcto @username" pattern="^@[^\s]+">
+                </div>
+                <fieldset>
+                    <legend>¿Cómo me conociste?</legend>
+
+                    <label for="university">Universidad</label>
+                    <input type="radio" name="select" id="university" value="university">
+
+                    <label for="kc">Keepcoding Kick-off</label>
+                    <input type="radio" name="select" id="kc" value="kc">
+
+                    <label for="school">Colegio</label>
+                    <input type="radio" name="select" id="school" value="school">
+
+                    <label for="gh">En Github</label>
+                    <input type="radio" name="select" id="gh" value="gh">
+                </fieldset>
+                <div class="form-element">
+                    <label for="bio">Mas información</label>
+                    <textarea required name="bio" id="bio" rows="6" placeholder="Quieres saber algo mas" maxlength="180"></textarea>
+                </div>
+                <div class="form-element row">
+                    <label for="newsletter">Quiero acceso a la newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+                <div>
+                    <input class="bnt secondary" type="reset" value="Reset">
+                    <button class="btn">Guardar</button>
+                </div>
+            </form>
+        </main>      
         <footer class="footer">
             <p>Aqui pondre las redes sociales</p>
         </footer>

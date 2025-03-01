@@ -20,16 +20,13 @@
             <nav class="nav">
                 <ul class="list">
                     <li>
-                        <a class="btn hide" href="#title">All shows</a>
-                    </li>
-                    <li>
                         <a class="btn" href="./signin.html">Proyectos</a>
                     </li>
                     <li>
-                        <a class="btn" href="">Habilidades</a>
+                        <a class="btn" href="#skills">Habilidades</a>
                     </li>
                     <li>
-                        <a class="btn" href="">Formulario</a>
+                        <a class="btn" href="#contact">Formulario</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +42,7 @@
             <div class="section">
                 <h2>Mis habilidades</h2>
 
-                <div class="skills">
+                <div id="skills">
                     
                     <div class="skill Fuerza">
                       <p class="skill-name">Fuerza Sobrehumana</p>
@@ -96,7 +93,7 @@
                     <p class="heading">Wonder Woman</p>
                 </div>
             </section>
-            <form action="/registro" method="post" novalidate>
+            <form action="/registro" method="post" novalidate id="contact">
                 <div class="form-element">
                     <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
@@ -143,7 +140,13 @@
             </form>
         </main>     
         <footer class="footer">
-            <p>Aqui pondre las redes sociales</p>
+            <div class="footer-content">
+                <ul class="social-links">
+                  <li><a href="https://www.instagram.com/" target="_blank"><img src="./app/instagram.svg" alt="Instagram"></a></li>
+                  <li><a href="https://twitter.com/" target="_blank"><img src="./app/x.svg" alt="Twitter"></a></li>
+                  <li><a href="https://www.youtube.com/" target="_blank"><img src="./app/youtube.svg" alt="Youtube"></a></li>
+                </ul>
+              </div>
         </footer>
     </body>
 </html>

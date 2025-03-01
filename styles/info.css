@@ -1,0 +1,18 @@
+.main {
+    width: 90%;
+    margin:0 auto;
+    max-width: 768px;
+}
+
+.info {
+    .pictures {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    video {
+        position: relative;
+        top: 0;
+        width: 25em;
+    }
+}

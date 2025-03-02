@@ -14,8 +14,14 @@ figure {
     gap: 20px;
 }
 
-@media screen and (width >768px) {
+@media screen and (min-width: 768px) {
     .list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }    
+}
+
+@media screen and (min-width: 1024px) {
+    .list{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

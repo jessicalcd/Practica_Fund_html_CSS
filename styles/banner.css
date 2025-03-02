@@ -8,7 +8,7 @@
     margin-bottom: 2rem;    
     .image {
         background-color: var(--bg-color);
-        background-image: url('../pictures/WW-1.jpg');
+        background-image: url('../pictures/WW-1_r2ssnx_c_scale,w_715.jpg');
         background-size: contain;
         position: absolute;
         bottom: 0;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .banner {
-        background-image: url(../pictures/WW-2.jpg);
+    .banner .image {
+        background-image: url(../pictures/WW-1_r2ssnx_c_scale,w_363.jpg);
     }
 }

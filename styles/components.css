@@ -7,20 +7,23 @@
     border-radius: 3px;
     font-size: 0.85rem;
     border: 1px solid var(--main-brand-color);
+    transition: background-color 0.3s;
     &.secondary {
         background-color: transparent;
         border: 1px solid var(--main-text-color);
     }
 }
 
+
+
 @media screen and (hover: hover) {
     .btn {
         cursor: pointer;
     }
-    .bnt:hover {
+    .btn:hover {
         background-color: var(--main-brand-color-light);
     }    
-    .bnt.secondary:hover {
+    .btn.secondary:hover {
         background-color: var(--main-brand-color-light);
     }
 }

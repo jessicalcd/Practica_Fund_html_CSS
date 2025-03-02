@@ -9,36 +9,52 @@
     line-height: 1.5;
   }
 
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
 a {
     text-decoration: none;
 }
 
+.main {
+    width: 90%;
+    margin:0 auto;
+    max-width: 768px;
+    section {
+        padding: 1rem;
+    }
+}
+
+.section, form {
+    margin-bottom: 1rem;
+}
+
+
 .main-bg {
     background-color:var(--bg-color);
     color:var(--main-text-color);
+    opacity: 1;
+    border-radius: 4px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-h1, h2, h3, p {
+h1, h2, p {
     margin-top: 0;
 }
 
 p {
     margin: 0;
     margin-bottom: 1rem;
-}
-
-a.hide {
-    display: none;
-}
-
-@media screen and (width > 768px) {
-    a.hide {
-        display: block;
-    }    
 }
 
 @media print {

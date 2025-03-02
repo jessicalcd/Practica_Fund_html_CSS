@@ -16,18 +16,23 @@
     <body class="main-bg">
         <h1 class="sr-only" id="title">Wonder Woman</h1>
         <header class="header">
-            <img src="./pictures/Logo.jpg" alt="">
+            <a href="#title">
+              <img src="./pictures/Logo.jpg" alt="Logo Wonder Woman">
+            </a>
             <nav class="nav">
                 <ul class="list">
-                    <li>
-                        <a class="btn" href="./signin.html">Proyectos</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#skills">Habilidades</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="#contact">Formulario</a>
-                    </li>
+                  <li>
+                    <a class="btn sr-only" href="#title">All shows</a>
+                  </li>
+                  <li>
+                      <a class="btn" href="./signin.html">Proyectos</a>
+                  </li>
+                  <li>
+                      <a class="btn" href="#skills">Habilidades</a>
+                  </li>
+                  <li>
+                      <a class="btn" href="#contact">Formulario</a>
+                  </li>
                 </ul>
             </nav>
         </header>
@@ -39,10 +44,9 @@
                 <br>Con mi lazo de la verdad, puedo hacer que cualquiera revele sus secretos más profundos, y mi escudo es tan resistente como cualquier arma de guerra. Además, mis brazaletes indestructibles desvían ataques y proyectiles con gran facilidad.
                 <br>Mi misión es luchar por la paz, proteger la justicia y asegurarme de que el mundo sea un lugar mejor para todos, sin importar su origen o condición.
             </p>
-            <div class="section">
+            <div class="section" id="skills">
                 <h2>Mis habilidades</h2>
-
-                <div id="skills">
+                <div class="skills">
                     
                     <div class="skill Fuerza">
                       <p class="skill-name">Fuerza Sobrehumana</p>
@@ -93,7 +97,7 @@
                     <p class="heading">Wonder Woman</p>
                 </div>
             </section>
-            <form action="/registro" method="post" novalidate id="contact">
+            <form class="form" action="/registro" method="post" id="contact">
                 <div class="form-element">
                     <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
@@ -127,7 +131,7 @@
                 </fieldset>
                 <div class="form-element">
                     <label for="bio">Mas información</label>
-                    <textarea required name="bio" id="bio" rows="6" placeholder="Quieres saber algo mas" maxlength="180"></textarea>
+                    <textarea name="bio" id="bio" rows="6" placeholder="Quieres saber algo mas" maxlength="180"></textarea>
                 </div>
                 <div class="form-element row">
                     <label for="newsletter">Quiero acceso a la newsletter</label>
